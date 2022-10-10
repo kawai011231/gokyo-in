@@ -1,0 +1,23 @@
+.store_mv::after {
+  content: "Restaurant Introduction";
+}
+.subpage_store_list {
+  padding-top: 80px;
+}
+[data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
+  display: none;
+}
+[data-filter-view][data-filter-view~="あわら市"] [data-filter-key="あわら市"],
+[data-filter-view][data-filter-view~="坂井市"] [data-filter-key="坂井市"],
+[data-filter-view][data-filter-view~="永平寺町"] [data-filter-key="永平寺町"],
+[data-filter-view][data-filter-view~="勝山市"] [data-filter-key="勝山市"] {
+  display: block;
+}
+.store_filter_cond {
+  display: flex;
+  flex-wrap: wrap;
+}
+.store_filter_cond li {
+  padding-left: 40px;
+  padding-top: 40px;
+}
