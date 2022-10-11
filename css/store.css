@@ -4,6 +4,11 @@
 .subpage_store_list {
   padding-top: 80px;
 }
+.check_wrap {
+  background-color: #fff;
+  border: 4px #000 solid;
+  box-shadow: #fe511a 10px 10px;
+}
 [data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
   display: none;
 }
@@ -18,6 +23,48 @@
   flex-wrap: wrap;
 }
 .store_filter_cond li {
-  padding-left: 40px;
-  padding-top: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.store_filter_cond span {
+  padding-left: 8px;
+  font-weight: bold;
+}
+
+input {
+  display: none;
+}
+label {
+  width: 66px;
+  height: 33px;
+  box-sizing: border-box;
+  border: 2px solid;
+  float: left;
+  border-radius: 66px;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+input[type="checkbox"]:checked + label {
+  background: #fe511a;
+}
+label:before {
+  transition: 0.3s ease;
+  content: "";
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  background: white;
+  left: 2px;
+  top: 1px;
+  box-sizing: border-box;
+  border: 3px solid;
+  color: black;
+  border-radius: 166px;
+}
+input[type="checkbox"]:checked + label::before {
+  left: auto;
+  right: 2px;
 }
