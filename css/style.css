@@ -75,6 +75,12 @@ header {
   position: relative;
   width: 100%;
 }
+.br_sp {
+  display: none;
+}
+#menu_check {
+  display: none;
+}
 .header_noren {
   flex: none;
   height: auto;
@@ -118,14 +124,64 @@ header {
   right: 20px;
   width: 50px;
   height: 47px;
-  background-image: url(../img/detail_btn_img.png);
+  background-size: contain;
+  background-image: url(../img/mokuji_open.svg);
+  background-repeat: no-repeat;
 }
-.js-closeTrigger {
-  background-image: url(../img/detail_btn_img.png);
+/* サブページ */
+.subpage_top_wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 200px;
 }
-/* 
-サブページ
-*/
+.subpage_top_title {
+  position: relative;
+  margin-bottom: -8%;
+  margin-left: -8%;
+}
+.subpage_top_text_box {
+  width: 45%;
+  color: #fff;
+  background-color: #000;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  padding: 40px;
+  height: 100%;
+  margin: auto 0;
+  line-height: 2;
+}
+.subpage_top_img_box {
+  width: 49%;
+}
+.subpage_top_img {
+  width: 100%;
+  border: #000 solid 6px;
+  background-color: #fff;
+  padding: 4px;
+}
+.sub_overview_card {
+  background-color: #fff;
+  border: #000 6px solid;
+  width: 48%;
+}
+/* .sub_overview_card:last-child {
+    margin-top: 80px;
+  } */
+.sub_overview_card_text_small {
+  font-size: 16px;
+  line-height: 2;
+  padding: 20px 20px 28px;
+  color: #000;
+  font-weight: bold;
+}
+.overview_card_text_small span {
+  margin-top: 16px;
+}
+.sub_overview_card_text_large {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 28px 12px 24px;
+}
 .subpage_wrap {
   background-image: url("../img/subpage_mv_bg.png");
   background-attachment: fixed;
@@ -450,6 +506,73 @@ header
 .cource_map_wrap {
   width: 70%;
   position: relative;
+  z-index: 1;
+}
+.cource_map_btn_awaraonsen {
+  position: absolute;
+  top: -1%;
+  left: 49%;
+  width: 15%;
+}
+.cource_map_btn_tojinbou {
+  position: absolute;
+  top: 6%;
+  left: 38%;
+  width: 12%;
+}
+.cource_map_btn_maruokajo {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  width: 12%;
+}
+.cource_map_btn_eiheiji {
+  position: absolute;
+  top: 21%;
+  left: 59%;
+  width: 12%;
+}
+.cource_map_btn_kyouryuhakubutsukan {
+  position: absolute;
+  top: 22%;
+  left: 76%;
+  width: 14%;
+}
+.cource_map_btn_ichijodani {
+  position: absolute;
+  top: 32%;
+  left: 65%;
+  width: 14%;
+}
+.cource_map_btn_echizenwashi {
+  position: absolute;
+  top: 40%;
+  left: 48%;
+  width: 15%;
+}
+.cource_map_btn_kehijingu {
+  position: absolute;
+  top: 63%;
+  left: 35%;
+  width: 13%;
+}
+.cource_map_btn_uriwarinotaki {
+  position: absolute;
+  top: 59%;
+  left: 22%;
+  width: 15%;
+}
+.cource_map_btn_mikatagoko {
+  position: absolute;
+  top: 72%;
+  left: 22%;
+  width: 14%;
+}
+.cource_map_btn_sotomo {
+  position: absolute;
+  top: 70%;
+  left: 10%;
+  width: 14%;
 }
 .cource_detail_btn {
   position: absolute;
@@ -465,6 +588,7 @@ header
   width: 100%;
   top: -15%;
   left: -5%;
+  z-index: -1;
 }
 /* 
 名店紹介
@@ -745,19 +869,44 @@ footer
   .footer_img {
     width: 374px;
   }
+  /* サブページ */
+  .subpage_top_img_box {
+    width: 340px;
+  }
+  .subpage_top_text_box {
+    padding: 20px;
+  }
+  .sub_overview_card_text_small {
+    padding: 8px 8px 16px;
+    line-height: 1.8;
+  }
+  .sub_overview_card_text_small {
+    font-size: 14px;
+  }
+  .sub_overview_card_text_large {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 20px 8px 18px;
+  }
 }
 
 @media screen and (max-width: 767px) {
+  .br_sp {
+    display: block;
+  }
   .header_nav {
     display: none;
   }
   #js-menuTrigger {
     display: block;
   }
-  .js-nav {
+  #menu_check:checked ~ #js-menuTrigger {
+    background-image: url(../img/mokuji_close.svg);
+  }
+  #menu_check:checked ~ .header_nav {
     display: block;
   }
-  .js-nav .header_list {
+  .header_list {
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -767,14 +916,14 @@ footer
     position: fixed;
     z-index: 1;
   }
-  .js-nav .header_list .header_link {
+  .header_list .header_link {
     writing-mode: horizontal-tb;
     border: none;
     margin: 8px;
     display: block;
     height: auto;
   }
-  .js-nav .header_list li:first-child {
+  .header_list li:first-child {
     border: none;
   }
   .section_title {
@@ -916,5 +1065,25 @@ footer
   .footer_list_wrap {
     width: 100%;
     padding-bottom: 16px;
+  }
+  /* サブページ */
+  .subpage_top_wrap {
+    display: block;
+  }
+  .subpage_top_img_box {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .subpage_top_text_box {
+    width: 80%;
+    margin: 80px auto 0;
+  }
+}
+@media screen and (max-width: 600px) {
+  .sub_overview_card_text_small {
+    padding: 8px 8px 20px;
+  }
+  .sub_overview_card {
+    width: 86%;
   }
 }

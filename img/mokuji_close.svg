@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.644" height="60.743" viewBox="0 0 64.644 60.743">
+  <g id="mokuji_close" transform="translate(-309.356 -7.257)">
+    <path id="長方形_8" data-name="長方形 8" d="M0,0H61a0,0,0,0,1,0,0V1A29,29,0,0,1,32,30H29A29,29,0,0,1,0,1V0A0,0,0,0,1,0,0Z" transform="translate(313 30)" fill="#da6345"/>
+    <rect id="長方形_9" data-name="長方形 9" width="23" height="11" transform="translate(332 57)" fill="#da6345"/>
+    <text id="閉じる" transform="translate(344 49)" fill="#fff" font-size="10" font-family="HiraginoSans-W6, Hiragino Sans"><tspan x="-15" y="0">閉じる</tspan></text>
+    <line id="線_15" data-name="線 15" y2="20" transform="translate(353.5 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_16" data-name="線 16" y2="20" transform="translate(356 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_17" data-name="線 17" y2="20" transform="translate(358.5 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_18" data-name="線 18" y2="20" transform="translate(361 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_19" data-name="線 19" y2="20" transform="translate(363.5 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_20" data-name="線 20" x1="6" y2="10.796" transform="translate(347.5 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_21" data-name="線 21" x1="6" y2="10.796" transform="translate(350 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_22" data-name="線 22" x1="6" y2="10.796" transform="translate(352.5 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_23" data-name="線 23" x1="6" y2="10.796" transform="translate(355 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_24" data-name="線 24" x1="6" y2="10.796" transform="translate(357.5 7.5)" fill="none" stroke="#707070" stroke-width="1"/>
+    <line id="線_25" data-name="線 25" y1="8" x2="50" transform="translate(315.5 11.5)" fill="none" stroke="#000" stroke-width="2"/>
+    <line id="線_26" data-name="線 26" y1="8" x2="55" transform="translate(309.5 8.5)" fill="none" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>
