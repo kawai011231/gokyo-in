@@ -1,8 +1,8 @@
-.blog_mv::after {
-  content: "Echizen Soba Blog";
+.subpage_blog_title {
+  background-color: #ef228d;
 }
-.subpage_store_list {
-  padding-top: 80px;
+.blog_shadow {
+  box-shadow: #ef228d 8px 8px;
 }
 [data-filter-view]:not([data-filter-view=""]) [data-filter-key] {
   display: none;
@@ -42,4 +42,28 @@ input[type="checkbox"]:checked ~ #label2,
 input[type="checkbox"]:checked ~ #label3,
 input[type="checkbox"]:checked ~ #label4 {
   background-color: #db694c;
+}
+
+@media screen and (max-width: 900px) {
+  .blog_filter_cond label {
+    width: 180px;
+    margin: 10px;
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .blog_filter_cond {
+    justify-content: space-around;
+  }
+  .blog_filter_cond label {
+    width: 144px;
+    margin: 4px;
+    font-size: 12px;
+  }
+  .blog_card_element {
+    margin-top: 40px;
+  }
+  .blog_text {
+    font-size: 12px;
+  }
 }

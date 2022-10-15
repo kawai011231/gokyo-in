@@ -1,5 +1,11 @@
-.store_mv::after {
-  content: "Restaurant Introduction";
+.subpage_store_title {
+  background-color: #db694c;
+}
+.store_shadow {
+  box-shadow: #db694c 8px 8px;
+}
+.filter {
+  margin-top: 200px;
 }
 .subpage_store_list {
   padding-top: 80px;
@@ -23,7 +29,7 @@
   flex-wrap: wrap;
 }
 .store_filter_cond li {
-  padding: 20px;
+  padding: 12px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
@@ -36,7 +42,7 @@
 input {
   display: none;
 }
-label {
+.store_label {
   width: 66px;
   height: 33px;
   box-sizing: border-box;
@@ -47,10 +53,10 @@ label {
   cursor: pointer;
   transition: 0.3s ease;
 }
-input[type="checkbox"]:checked + label {
+input[type="checkbox"]:checked + .store_label {
   background: #fe511a;
 }
-label:before {
+.store_label:before {
   transition: 0.3s ease;
   content: "";
   width: 28px;
@@ -67,4 +73,27 @@ label:before {
 input[type="checkbox"]:checked + label::before {
   left: auto;
   right: 2px;
+}
+
+@media screen and (max-width: 767px) {
+  .filter {
+    margin-top: 120px;
+  }
+  .store_label {
+    width: 40px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 50px;
+  }
+  .store_label:before {
+    width: 14px;
+    height: 14px;
+  }
+  .store_filter_cond span {
+    font-size: 14px;
+    padding-left: 4px;
+  }
+  .store_filter_cond li {
+    padding: 6px;
+  }
 }
