@@ -57,97 +57,34 @@
               </li>
               <!-- /.filter-cond -->
             </ul>
-            <ul class="blog_card_list filter-items">
-              <li class="blog_card_element" data-filter-key="カテゴリー">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element" data-filter-key="カテゴリー">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element" data-filter-key="カテゴリー">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element" data-filter-key="カテゴリー">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element" data-filter-key="カテゴリー">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element" data-filter-key="カテゴリー">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
+            <ul class="blog_card_list">
+            <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 10 ) ); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <li class="blog_card_element">
+                  <a href="<?php the_permalink(); ?>">
+                    <h3 class="blog_card_title">
+                    <?php the_title(); ?>
+                    </h3>
+                  </a>
+                  <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('full'); ?>
+                  </a>
+                    <div class="blog_category"><?php the_category(); ?></div>
+                  <a href="<?php the_permalink(); ?>">
+                    <p class="blog_text">
+                    <?php the_content(); ?>
+                    </p>
+                  </a>
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="blog_bun">
+                      <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+              <?php endif; ?>
             </ul>
           </div>
         </div>

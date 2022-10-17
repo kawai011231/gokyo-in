@@ -150,107 +150,43 @@
                 <!-- /.filter-cond -->
               </ul>
             </div>
-            <ul class="store_list filter-items subpage_store_list">
-              <li class="store_element" data-filter-key="あわら市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="あわら市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="あわら市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="坂井市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="坂井市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="坂井市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="坂井市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="坂井市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-              <li class="store_element" data-filter-key="坂井市">
-                <a href="#" class="store_link">
-                  <h3 class="shop_name">越前そば〇〇屋</h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                    alt=""
-                    class="store_detail_btn_img"
-                  />
-                </a>
-              </li>
-            </ul>
+            <ul class="store_list">
+              <?php $the_query = new WP_Query( array( 'post_type' => 'shop', 'posts_per_page' => 21 ) ); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                <li class="store_element">
+                  <a href="#" class="store_link">
+                    <div class="shop_name_wrap">
+                      <h3 class="shop_name"><?php the_title(); ?></h3>
+                      <p class="shop_text">
+                      <?php
+if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
+  $content = mb_substr( strip_tags( $post->post_content ), 0, 20, 'UTF-8' );
+  echo $content . '…';
+} else {
+  echo strip_tags( $post->post_content );
+}
+?>
+                      </p>
+                      <ul class="shop_tag_list">
+                        <li class="shop_tag">福井市</li>
+                        <li class="shop_tag">塩だし</li>
+                        <li class="shop_tag">十割そば</li>
+                        <li class="shop_tag">配送可</li>
+                      </ul>
+                    </div>
+                    <?php the_post_thumbnail('full'); ?>
+                    <img
+                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
+                      alt=""
+                      class="store_detail_btn_img"
+                    />
+                  </a>
+                </li>
+                <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+              <?php endif; ?>
+              </ul>
           </div>
         </div>
       </main>

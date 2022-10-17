@@ -83,18 +83,18 @@
           <div class="ex_how_btn_wrap">
             <ul class="ex_how_btn_box">
               <li>
-                <a href=""><img src="<?= get_template_directory_uri(); ?>/img/ex_history_button.png" alt="" /></a>
+                <a href="https://gokyoin.com/explanation#history"><img src="<?= get_template_directory_uri(); ?>/img/ex_history_button.png" alt="" /></a>
               </li>
               <li>
-                <a href=""><img src="<?= get_template_directory_uri(); ?>/img/ex_method_button.png" alt="" /></a>
+                <a href="https://gokyoin.com/explanation/#method"><img src="<?= get_template_directory_uri(); ?>/img/ex_method_button.png" alt="" /></a>
               </li>
               <li>
-                <a href=""><img src="<?= get_template_directory_uri(); ?>/img/ex_secret_button.png" alt="" /></a>
+                <a href="https://gokyoin.com/explanation#secret"><img src="<?= get_template_directory_uri(); ?>/img/ex_secret_button.png" alt="" /></a>
               </li>
             </ul>
           </div>
           <div class="ex_how_wrap">
-            <div class="ex_history">
+            <div class="ex_history" id="history">
               <div class="ex_how_img_box">
                 <div class="ex_how_noren">
                   <img src="<?= get_template_directory_uri(); ?>/img/ex_noren.png" alt="" />
@@ -171,7 +171,7 @@
                 </ul>
               </div>
             </div>
-            <div class="ex_method">
+            <div class="ex_method" id="method">
               <div class="ex_how_img_box">
                 <div class="ex_how_noren">
                   <img src="<?= get_template_directory_uri(); ?>/img/ex_noren2.png" alt="" />
@@ -257,7 +257,7 @@
                 </div>
               </div>
             </div>
-            <div class="ex_secret">
+            <div class="ex_secret" id="secret">
               <div class="ex_how_img_box">
                 <div class="ex_how_noren">
                   <img src="<?= get_template_directory_uri(); ?>/img/ex_noren3.png" alt="" />

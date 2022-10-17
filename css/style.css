@@ -1,10 +1,11 @@
 /* 
 common
 */
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
 body {
-  font-family: "Roboto", sans-serif;
-  font-weight: 600;
+  font-family: "Noto Sans JP", "Roboto", sans-serif;
+  font-weight: bold;
 }
 .toppage_wrap::before {
   background-image: url("../img/background_img.jpg");
@@ -696,12 +697,13 @@ header
   background-color: #fff;
   padding: 24px 16px 32px 16px;
   width: 49%;
-  border-radius: 10px;
-  border: #000 1px solid;
+  /* border-radius: 10px; */
+  border: #000 3px solid;
   margin-top: 64px;
 }
 .blog_card_title {
   text-align: center;
+  padding-bottom: 16px;
 }
 .blog_img {
   padding-top: 16px;
@@ -1113,3 +1115,202 @@ footer
     background-image: url("../img/background_img_sp.jpg");
   }
 }
+
+
+
+
+/* お問い合わせ */
+
+/************************************
+** お問い合わせフォームの入力
+************************************/
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+select,
+textarea,
+.field {
+  display: block;
+  width: 100%;
+  height: 45px;
+  margin-bottom: 0;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #eff1f5;
+  box-shadow: none;
+  color: #5c6b80;
+  font-size: 1em;
+  vertical-align: middle;
+  line-height: 45px;
+  transition: background-color 0.24s ease-in-out;
+}
+textarea {
+  max-width: 100%;
+  min-height: 120px;
+  line-height: 1.5em;
+  padding: 0.5em;
+  overflow: auto;
+}
+@media(max-width:500px) {
+    .inquiry td,
+    .inquiry th {
+        display: block !important;
+        width: 100% !important;
+        border-top: none !important;
+        -webkit-box-sizing: border-box !important;
+        -moz-box-sizing: border-box !important;
+        box-sizing: border-box !important
+    }
+    .inquiry tr:first-child th {
+        border-top: 1px solid #d7d7d7 !important
+    }
+    .inquiry .any,
+    .inquiry .haveto {
+        font-size: 10px
+    }
+}
+.inquiry th {
+    text-align: left;
+    font-size: 14px;
+    color: #444;
+    padding-right: 5px;
+    width: 30%;
+    background: #f7f7f7;
+}
+.inquiry td {
+    font-size: 13px;
+}
+.entry-content .inquiry tr,
+.entry-content table {
+    border: solid 1px #d7d7d7
+}
+.haveto {
+    font-size: 7px;
+    padding: 5px;
+    background: #ff9393;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 1px
+}
+.any {
+    font-size: 7px;
+    padding: 5px;
+    background: #93c9ff;
+    color: #fff;
+    border-radius: 2px;
+    margin-right: 5px;
+    position: relative;
+    bottom: 1px
+}
+.verticallist .wpcf7-list-item {
+    display: block
+}
+#formbtn {
+    display: block;
+    padding: 15px;
+    width: 350px;
+    background: #000;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 2px;
+    margin: 25px auto 0;
+    border: 2px solid #000;
+	transition: 0.7s
+}
+#formbtn:hover {
+    background: #fff;
+		color: #000;
+		border: 2px solid #000
+}
+th {
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 13px
+}
+td {
+    padding: 12px
+}
+input,
+select,
+textarea {
+    border: 1px solid #dfdfdf;
+    letter-spacing: 1px;
+    margin: 0;
+    max-width: 100%;
+    resize: none
+}
+.wpcf7-list-item {
+    display: block !important;
+    margin-top: 16px !important;
+}
+.wpcf7 {
+    width: 80%;
+    margin: 120px auto;
+}
+.inquiry {
+    width: 100%;
+}
+
+
+@media screen and (max-width:1240px) {
+    tr span {
+        display: block;
+        padding-top: 16px;
+    }
+    .any,.haveto {
+        display: inline;
+    }
+    .wpcf7-form-control-wrap {
+        padding-top: 0;
+    }
+    .wpcf7-form-control {
+        padding-top: 0;
+    }
+    .wpcf7-list-item {
+        padding-top: 0;
+    }
+    .wpcf7-list-item-label {
+        display: inline-block;
+        padding-top: 0;
+    }
+}
+@media screen and (max-width:767px) {
+    .wpcf7 {
+        width: 100%;
+    }
+}
+
+.checkbox input, .input2 {
+	    display: inherit;
+}
+
+.wpcf7-form-control-wrap{
+	    display: block;
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0 12px;
+    border: 0;
+    border-radius: 3px;
+    background-color: #eff1f5;
+    box-shadow: none;
+    color: #5c6b80;
+    font-size: 1em;
+    vertical-align: middle;
+    line-height: 45px;
+    transition: background-color 0.24s ease-in-out;
+}
+

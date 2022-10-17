@@ -67,3 +67,12 @@ input[type="checkbox"]:checked ~ #label4 {
     font-size: 12px;
   }
 }
+
+
+
+/* =========WP============ */
+
+.wp-post-image {
+  height: auto;
+  border: #000 3px solid;
+}

@@ -47,7 +47,7 @@
                 <p class="overview_card_text_large">
                   福井の蕎麦の名店を巡って、御蕎印を集めよう！
                 </p>
-                <a href="#" class="detail_btn">
+                <a href="https://gokyoin.com/overview/" class="detail_btn">
                   <span>▼</span>
                   <p class="detail_btn_text">詳しく見る</p>
                   <img
@@ -2679,18 +2679,18 @@
                       alt=""
                       class="explanation_flag_crown"
                     />
-                    <p class="explanation_flag_heading">日本一うまいいそば</p>
+                    <p class="explanation_flag_heading">日本一うまいそば</p>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
                 </div>
                 <div class="explanation_circle">
-                  <a href="#" class="explanation_circle_link"
+                  <a href="https://gokyoin.com/explanation#history" class="explanation_circle_link"
                     >越前そばの歴史を知る</a
                   >
-                  <a href="#" class="explanation_circle_link"
+                  <a href="https://gokyoin.com/explanation#method" class="explanation_circle_link"
                     >越前そばの製法を知る</a
                   >
-                  <a href="#" class="explanation_circle_link"
+                  <a href="https://gokyoin.com/explanation#secret" class="explanation_circle_link"
                     >越前そばの味の秘密を知る</a
                   >
                 </div>
@@ -2720,7 +2720,7 @@
                   <p class="explanation_text_foot">
                     越前そばをもっと知って、その魅力を拡散しよう
                   </p>
-                  <a href="#" class="detail_btn">
+                  <a href="https://gokyoin.com/explanation/" class="detail_btn">
                     <span>▼</span>
                     <p class="detail_btn_text">詳しく見る</p>
                     <img
@@ -2747,51 +2747,37 @@
               </div>
               <div class="course_inner">
                 <ul class="course_list">
+                <?php $the_query = new WP_Query( array( 'post_type' => 'course', 'posts_per_page' => 6 ) ); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                   <li class="course_element">
                     <a href="#">
                       <div class="course_element_inner">
-                        <p class="course_number">1</p>
+                        <div class="course_number"><?php
+$number = (max(1, $paged) - 1) * $the_query->query_vars['posts_per_page'] + $the_query->current_post + 1;
+echo $number;
+?></div>
                         <div class="course_text_wrap">
                           <h3 class="cource_name">
-                            自然×越前そば巡りの半日コース
+                          <?php the_title(); ?>
                           </h3>
                           <p class="cource_text">
-                            福井市周辺/足羽山公園、一乗谷朝倉氏遺跡など
+                          <?php
+if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
+  $content = mb_substr( strip_tags( $post->post_content ), 0, 20, 'UTF-8' );
+  echo $content . '…';
+} else {
+  echo strip_tags( $post->post_content );
+}
+?>
                           </p>
                         </div>
                       </div>
                     </a>
                   </li>
-                  <li class="course_element">
-                    <a href="#">
-                      <div class="course_element_inner">
-                        <p class="course_number">2</p>
-                        <div class="course_text_wrap">
-                          <h3 class="cource_name">
-                            自然×越前そば巡りの半日コース
-                          </h3>
-                          <p class="cource_text">
-                            福井市周辺/足羽山公園、一乗谷朝倉氏遺跡など
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
-                  <li class="course_element">
-                    <a href="#">
-                      <div class="course_element_inner">
-                        <p class="course_number">3</p>
-                        <div class="course_text_wrap">
-                          <h3 class="cource_name">
-                            自然×越前そば巡りの半日コース
-                          </h3>
-                          <p class="cource_text">
-                            福井市周辺/足羽山公園、一乗谷朝倉氏遺跡など
-                          </p>
-                        </div>
-                      </div>
-                    </a>
-                  </li>
+                  <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+              <?php endif; ?>
                 </ul>
                 <div class="cource_map_wrap">
                   <img src="<?= get_template_directory_uri(); ?>/img/cource_map.png" alt="" />
@@ -2836,17 +2822,6 @@
                       ><img src="<?= get_template_directory_uri(); ?>/img/sotomo.png" alt=""
                     /></a>
                   </div>
-                  <a href="#" class="detail_btn cource_detail_btn">
-                    <span>▼</span>
-                    <p class="detail_btn_text cource_detail_btn_text">
-                      詳しく見る
-                    </p>
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png"
-                      alt=""
-                      class="detail_btn_img cource_detail_btn_img"
-                    />
-                  </a>
                   <img src="<?= get_template_directory_uri(); ?>/img/person5.png" alt="" class="cource_person" />
                 </div>
               </div>
@@ -2860,12 +2835,22 @@
                 <h2 class="store_title section_title">＃名店紹介</h2>
               </div>
               <ul class="store_list">
+              <?php $the_query = new WP_Query( array( 'post_type' => 'shop', 'posts_per_page' => 6 ) ); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <li class="store_element">
                   <a href="#" class="store_link">
                     <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
+                      <h3 class="shop_name"><?php the_title(); ?></h3>
                       <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
+                      <?php
+if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
+  $content = mb_substr( strip_tags( $post->post_content ), 0, 20, 'UTF-8' );
+  echo $content . '…';
+} else {
+  echo strip_tags( $post->post_content );
+}
+?>
                       </p>
                       <ul class="shop_tag_list">
                         <li class="shop_tag">福井市</li>
@@ -2874,7 +2859,7 @@
                         <li class="shop_tag">配送可</li>
                       </ul>
                     </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
+                    <?php the_post_thumbnail('full'); ?>
                     <img
                       src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
                       alt=""
@@ -2882,184 +2867,11 @@
                     />
                   </a>
                 </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
-                <li class="store_element">
-                  <a href="#" class="store_link">
-                    <div class="shop_name_wrap">
-                      <h3 class="shop_name">越前そば〇〇屋</h3>
-                      <p class="shop_text">
-                        愛され続けて40年。 塩だしを使用した越前おろしそば。
-                      </p>
-                      <ul class="shop_tag_list">
-                        <li class="shop_tag">福井市</li>
-                        <li class="shop_tag">塩だし</li>
-                        <li class="shop_tag">十割そば</li>
-                        <li class="shop_tag">配送可</li>
-                      </ul>
-                    </div>
-                    <img src="<?= get_template_directory_uri(); ?>/img/shop_img1.png" alt="" />
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/store_detail_btn_img.png"
-                      alt=""
-                      class="store_detail_btn_img"
-                    />
-                  </a>
-                </li>
+                <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+              <?php endif; ?>
               </ul>
-              <a href="#" class="detail_btn store_detail_btn">
+              <a href="https://gokyoin.com/store/" class="detail_btn store_detail_btn">
                 <span>▼</span>
                 <p class="detail_btn_text store_detail_btn_text">詳しく見る</p>
                 <img
@@ -3078,96 +2890,33 @@
               <h2 class="blog_title section_title">＃越前そばブログ</h2>
             </div>
             <ul class="blog_card_list">
-              <li class="blog_card_element">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
-              <li class="blog_card_element">
-                <a href="#">
-                  <h3 class="blog_card_title">
-                    #タイトルが入ります。タイトルが入。
-                  </h3>
-                  <img src="<?= get_template_directory_uri(); ?>/img/blog_card_img1.png" alt="" class="blog_img" />
-                  <p class="blog_category">カテゴリー</p>
-                  <p class="blog_text">
-                    テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-                  </p>
-                  <div class="blog_bun">
-                    <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
-                  </div>
-                </a>
-              </li>
+            <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 4 ) ); ?>
+            <?php if ( $the_query->have_posts() ) : ?>
+            <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <li class="blog_card_element">
+                  <a href="<?php the_permalink(); ?>">
+                    <h3 class="blog_card_title">
+                    <?php the_title(); ?>
+                    </h3>
+                  </a>
+                  <a href="<?php the_permalink(); ?>">
+                    <?php the_post_thumbnail('full'); ?>
+                  </a>
+                    <div class="blog_category"><?php the_category(); ?></div>
+                  <a href="<?php the_permalink(); ?>">
+                    <p class="blog_text">
+                    <?php the_content(); ?>
+                    </p>
+                  </a>
+                  <a href="<?php the_permalink(); ?>">
+                    <div class="blog_bun">
+                      <img src="<?= get_template_directory_uri(); ?>/img/arrow.png" alt="" />
+                    </div>
+                  </a>
+                </li>
+              <?php endwhile; ?>
+              <?php wp_reset_postdata(); ?>
+              <?php endif; ?>
             </ul>
             <img src="<?= get_template_directory_uri(); ?>/img/person7.png" alt="" class="blog_person" />
           </div>
