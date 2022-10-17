@@ -3,17 +3,15 @@
         <div class="l-container">
           <div class="subpage_top_wrap">
           <div class="subpage_top_img_box">
-            <h1 class="subpage_top_title section_title subpage_store_title "># 名店紹介</h1>
+            <h1 class="subpage_top_title section_title subpage_store_title "># 御蕎印参加店舗紹介</h1>
             <div class="subpage_top_img store_shadow">
               <img src="<?= get_template_directory_uri(); ?>/img/ov_overview.png" alt="">
             </div>
           </div>
           <div class="subpage_top_text_box store_shadow">
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p>御蕎印に参加している店舗をご紹介します。ここでは各店舗の御蕎印デザインもご紹介しますので、是非あなたの気になる店舗を見つけてください。また既にお気に入りの店舗がある方はその店舗がどんなデザインなのか是非ご確認ください。<br>
+            尚、参加店舗は順次増えていく予定です（お知らせやブログにて発表予定）。その度に集める楽しさ、巡る奥深さが増していきます。
+          </p>
           </div>
 
         </div>

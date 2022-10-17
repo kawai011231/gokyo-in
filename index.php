@@ -3,17 +3,13 @@
         <div class="l-container">
           <div class="subpage_top_wrap">
           <div class="subpage_top_img_box">
-            <h1 class="subpage_top_title section_title subpage_blog_title "># 御蕎印プロジェクト</h1>
+            <h1 class="subpage_top_title section_title subpage_blog_title "># 越前おろしそばブログ</h1>
             <div class="subpage_top_img blog_shadow">
               <img src="<?= get_template_directory_uri(); ?>/img/ov_overview.png" alt="">
             </div>
           </div>
           <div class="subpage_top_text_box blog_shadow">
-            <p>テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
-              テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+            <p>御蕎印に関することはもちろん、越前おろしそばに関すること、福井県に関すること、などを発信していきます！おろしそばや福井をあまり知らない方が驚くような情報も随時発信していきます！</p>
           </div>
 
         </div>
@@ -36,24 +32,12 @@
                 <label id="label4" for="input4">いただきます</label>
               </li>
               <li>
-                <input type="checkbox" value="ごちそうさまでした" id="input5" />
-                <label id="label5" for="input5">ごちそうさまでした</label>
+                <input type="checkbox" value="いただきます" id="input5" />
+                <label id="label5" for="input5">いただきます</label>
               </li>
               <li>
-                <input
-                  type="checkbox"
-                  value="ありがとうございます"
-                  id="input6"
-                />
-                <label id="label6" for="input6">ありがとうございます</label>
-              </li>
-              <li>
-                <input type="checkbox" value="こんばんは" id="input7" />
-                <label id="label7" for="input7">ごめんなさい</label>
-              </li>
-              <li>
-                <input type="checkbox" value="おやすみなさい" id="input8" />
-                <label id="label8" for="input8">おやすみなさい</label>
+                <input type="checkbox" value="いただきます" id="input6" />
+                <label id="label6" for="input6">いただきます</label>
               </li>
               <!-- /.filter-cond -->
             </ul>

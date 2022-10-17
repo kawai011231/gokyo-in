@@ -40,7 +40,9 @@
 input[type="checkbox"]:checked ~ #label1,
 input[type="checkbox"]:checked ~ #label2,
 input[type="checkbox"]:checked ~ #label3,
-input[type="checkbox"]:checked ~ #label4 {
+input[type="checkbox"]:checked ~ #label4,
+input[type="checkbox"]:checked ~ #label5,
+input[type="checkbox"]:checked ~ #label6 {
   background-color: #db694c;
 }
 
@@ -67,8 +69,6 @@ input[type="checkbox"]:checked ~ #label4 {
     font-size: 12px;
   }
 }
-
-
 
 /* =========WP============ */
 

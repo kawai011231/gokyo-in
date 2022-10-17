@@ -22,22 +22,27 @@
                   SOBA×FUKUI×PEOPLE
                 </p>
                 <div class="overview_card_text_wrap">
+                  <!-- <p class="overview_card_text_primary">
+                    うまさの思い出をつなげてゆく、ふくいくたる越前おろしそばを巡る旅へ
+                  </p> -->
                   <p class="overview_card_text_primary">
-                    <span>「そば」</span>を楽しみ、
+                    うまさの思い出をつなげ
                   </p>
                   <p class="overview_card_text_primary">
-                    <span>「福井」</span>を楽しみ、
+                    てゆく、ふくいくたる
                   </p>
                   <p class="overview_card_text_primary">
-                    <span>「人」</span>を楽しむ。
+                    越前おろしそばを巡る旅へ
                   </p>
                 </div>
               </div>
               <div class="overview_card">
                 <p class="overview_card_text_small">
-                  <span
-                    >テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</span
-                  >
+                  <span>
+                    「越前おろしそば」×「御朱印」＝「御蕎印（ごきょういん）」<br>
+                    お蕎麦屋さんだけも100店舗以上、越前おろしそばを提供しているお店は400店舗を超えるといわれるほど「おろしそば文化」が発展している福井県。<br>
+                    数多くあるお店ですが、味の違いはもちろんのこと、こだわりや趣、ご主人の想いには店舗ごとの特徴が存在しています。そこで、それらをひとつひとつ御蕎印のデザインとして制作し、それを集めることにより、より楽しく巡ってもらおうという企画です。
+                  </span>
                 </p>
                 <img
                   src="<?= get_template_directory_uri(); ?>/img/overview_img2.png"
@@ -45,7 +50,7 @@
                   class="overview_card_img"
                 />
                 <p class="overview_card_text_large">
-                  福井の蕎麦の名店を巡って、御蕎印を集めよう！
+                  御蕎印を集めて、お店の数だけ存在する違いを感じよう！
                 </p>
                 <a href="https://gokyoin.com/overview/" class="detail_btn">
                   <span>▼</span>
@@ -2661,7 +2666,7 @@
                       alt=""
                       class="explanation_flag_crown"
                     />
-                    <p class="explanation_flag_heading">福井県の名物料理</p>
+                    <p class="explanation_flag_heading">そばが美味しい都道府県　2年連続</p>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
                   <div class="explanation_flag">
@@ -2670,7 +2675,7 @@
                       alt=""
                       class="explanation_flag_crown"
                     />
-                    <p class="explanation_flag_heading">うまいものがある県</p>
+                    <p class="explanation_flag_heading">地元ならではのおいしい食べ物が多かった都道府県</p>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
                   <div class="explanation_flag">
@@ -2679,7 +2684,7 @@
                       alt=""
                       class="explanation_flag_crown"
                     />
-                    <p class="explanation_flag_heading">日本一うまいそば</p>
+                    <p class="explanation_flag_heading">蕎麦鑑定士が選ぶ日本一おいしいそば産地大賞</p>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
                 </div>
@@ -2699,7 +2704,7 @@
                 <div class="explanation_text_card">
                   <div class="explanation_title_wrap">
                     <h2 class="explanation_title section_title">
-                      ＃越前そばとは
+                      ＃御蕎印プロジェクト
                     </h2>
                   </div>
                   <div class="explanation_text_box">
@@ -2713,12 +2718,16 @@
                         class="explanation_img"
                       />
                       <p class="explanation_text">
-                        テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。
+                       越前おろしそばは何故日本一美味しいのか。その理由はいくつかあります。<br>
+                       ・石臼挽き<br>
+                       ・挽きぐるみ<br>
+                       ・数多く存在する在来種の存在<br>
+                       これら以外にも、何故大根おろしと一緒に食べるのか、など越前おろしそばの美味しさの秘密をご紹介します。
                       </p>
                     </div>
                   </div>
                   <p class="explanation_text_foot">
-                    越前そばをもっと知って、その魅力を拡散しよう
+                    越前おろしそばの美味しさの秘密を知ったら、その魅力を舌で、肌で、感じる旅に出よう！
                   </p>
                   <a href="https://gokyoin.com/explanation/" class="detail_btn">
                     <span>▼</span>
@@ -2902,10 +2911,17 @@ if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
                   <a href="<?php the_permalink(); ?>">
                     <?php the_post_thumbnail('full'); ?>
                   </a>
-                    <div class="blog_category"><?php the_category(); ?></div>
+                   <?php the_category(); ?>
                   <a href="<?php the_permalink(); ?>">
                     <p class="blog_text">
-                    <?php the_content(); ?>
+                      <?php
+if ( mb_strlen( $post->post_content, 'UTF-8' ) > 100 ) {
+  $content = mb_substr( strip_tags( $post->post_content ), 0, 100, 'UTF-8' );
+  echo $content . '…';
+} else {
+  echo strip_tags( $post->post_content );
+}
+?>
                     </p>
                   </a>
                   <a href="<?php the_permalink(); ?>">

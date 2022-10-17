@@ -5,25 +5,25 @@
             <img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="" class="footer_logo" />
             <ul class="footer_list">
               <li class="footer_element">
-                <a href="#" class="footer_link">TOP</a>
+                <a href="https://gokyoin.com/" class="footer_link">TOP</a>
               </li>
               <li class="footer_element">
-                <a href="#" class="footer_link">御蕎印PJとは？</a>
+                <a href="https://gokyoin.com/overview" class="footer_link">御蕎印プロジェクト</a>
               </li>
               <li class="footer_element">
-                <a href="#" class="footer_link">越前そばとは？</a>
+                <a href="https://gokyoin.com/explanation" class="footer_link">越前おろしそばとは</a>
               </li>
               <li class="footer_element">
-                <a href="#" class="footer_link">越前そば名店紹介</a>
+                <a href="https://gokyoin.com/store" class="footer_link">御蕎印参加店舗紹介</a>
               </li>
               <li class="footer_element">
-                <a href="#" class="footer_link">モデルコース</a>
+                <a href="https://gokyoin.com/#cource" class="footer_link">モデルコース</a>
               </li>
               <li class="footer_element">
-                <a href="#" class="footer_link">越前そばブログ</a>
+                <a href="https://gokyoin.com/blog" class="footer_link">越前おろしそばブログ</a>
               </li>
               <li class="footer_element">
-                <a href="#" class="footer_link">御蕎印帳通販</a>
+                <a href="https://gokyoin.com/store" class="footer_link">御蕎印帳通販</a>
               </li>
             </ul>
           </div>

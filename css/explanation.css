@@ -60,19 +60,17 @@
   box-shadow: #0b43b0 10px 10px;
 }
 .ex_charm_title {
-  width: fit-content;
   color: #0b43b0;
   font-weight: bold;
-  font-size: 100px;
-  position: absolute;
-  bottom: 0;
-  line-height: 1.5;
+  font-size: 50px;
+  padding-top: 40px;
+  line-height: 2;
   text-shadow: 1px 1px 0px #000, -1px -1px 0px #000, -1px 1px 0px #000,
     1px -1px 0px #000, 1px 0px 0px #000, -1px 0px 0px #000, 0px 1px 0px #000,
     0px -1px 0px #000;
 }
 .ex_charm_title_small {
-  font-size: 60px;
+  font-size: 36px;
 }
 .ex_how_wrap {
   margin-top: 200px;
@@ -309,12 +307,6 @@
 }
 
 @media screen and (max-width: 1000px) {
-  .ex_charm_title {
-    font-size: 88px;
-  }
-  .ex_charm_title_small {
-    font-size: 48px;
-  }
   .sub_explanation_flag_wrap {
     height: 230px;
   }
@@ -383,10 +375,10 @@
     font-size: 40px;
   }
   .ex_charm_title {
-    font-size: 78px;
+    font-size: 44px;
   }
   .ex_charm_title_small {
-    font-size: 40px;
+    font-size: 32px;
   }
   .sub_explanation_flag::after {
     bottom: -78px;
@@ -399,17 +391,19 @@
 }
 
 @media screen and (max-width: 767px) {
+  .ex_charm_title {
+    font-size: 36px;
+  }
+  .ex_charm_title_small {
+    font-size: 28px;
+  }
   .ex_charm_wrap {
     display: block;
-    margin-top: 120px;
+    margin-top: 80px;
   }
   .ex_charm_head {
     display: flex;
     flex-direction: column-reverse;
-  }
-  .ex_charm_title {
-    position: static;
-    margin: 0px auto 40px;
   }
   .sub_explanation_flag_wrap {
     width: 80%;
@@ -417,14 +411,11 @@
   }
   .sub_overview_card {
     width: 80%;
-    margin: 0 auto;
+    margin: 40px auto;
   }
   .sub_overview_card_text_small {
     padding: 20px 20px 40px;
     font-size: 16px;
-  }
-  .sub_overview_card_text_large {
-    font-size: 20px;
   }
 
   .cbp_tmtimeline > li .cbp_tmtime {
@@ -506,12 +497,6 @@
   }
 }
 @media screen and (max-width: 600px) {
-  .ex_charm_title {
-    font-size: 64px;
-  }
-  .ex_charm_title_small {
-    font-size: 36px;
-  }
   .sub_explanation_flag_wrap {
     width: 95%;
   }

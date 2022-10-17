@@ -179,7 +179,7 @@ header {
   } */
 .sub_overview_card_text_small {
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.7;
   padding: 20px 20px 28px;
   color: #000;
   font-weight: bold;
@@ -188,7 +188,6 @@ header {
   margin-top: 16px;
 }
 .sub_overview_card_text_large {
-  font-size: 24px;
   font-weight: bold;
   padding: 28px 12px 24px;
 }
@@ -708,7 +707,11 @@ header
 .blog_img {
   padding-top: 16px;
 }
-.blog_category {
+.post-categories {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post-categories li {
   border: #000 1px solid;
   border-radius: 8px;
   padding: 4px 8px;
@@ -785,7 +788,7 @@ footer
   text-orientation: upright;
   padding: 8px;
   border-left: 1px solid #000;
-  height: 134px;
+  height: 156px;
   font-size: 14px;
   text-align: left;
 }
@@ -864,7 +867,7 @@ footer
   }
   .cource_map_wrap {
     width: 65%;
-    margin: 0 auto;
+    margin: 40px auto 0 auto;
   }
 
   .store_list {
@@ -900,11 +903,6 @@ footer
   .sub_overview_card_text_small {
     font-size: 14px;
   }
-  .sub_overview_card_text_large {
-    font-size: 18px;
-    font-weight: bold;
-    padding: 20px 8px 18px;
-  }
 }
 
 @media screen and (max-width: 767px) {
@@ -931,7 +929,7 @@ footer
     width: 100vw;
     height: 100vh;
     position: fixed;
-    z-index: 1;
+    z-index: 2;
   }
   .header_list .header_link {
     writing-mode: horizontal-tb;
@@ -985,6 +983,7 @@ footer
   }
   .explanation_flag_wrap {
     justify-content: center;
+    margin-bottom: 40px;
   }
   .explanation_text_card {
     width: 90%;
@@ -1116,9 +1115,6 @@ footer
   }
 }
 
-
-
-
 /* お問い合わせ */
 
 /************************************
@@ -1162,155 +1158,155 @@ textarea {
   padding: 0.5em;
   overflow: auto;
 }
-@media(max-width:500px) {
-    .inquiry td,
-    .inquiry th {
-        display: block !important;
-        width: 100% !important;
-        border-top: none !important;
-        -webkit-box-sizing: border-box !important;
-        -moz-box-sizing: border-box !important;
-        box-sizing: border-box !important
-    }
-    .inquiry tr:first-child th {
-        border-top: 1px solid #d7d7d7 !important
-    }
-    .inquiry .any,
-    .inquiry .haveto {
-        font-size: 10px
-    }
+@media (max-width: 500px) {
+  .inquiry td,
+  .inquiry th {
+    display: block !important;
+    width: 100% !important;
+    border-top: none !important;
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+  }
+  .inquiry tr:first-child th {
+    border-top: 1px solid #d7d7d7 !important;
+  }
+  .inquiry .any,
+  .inquiry .haveto {
+    font-size: 10px;
+  }
 }
 .inquiry th {
-    text-align: left;
-    font-size: 14px;
-    color: #444;
-    padding-right: 5px;
-    width: 30%;
-    background: #f7f7f7;
+  text-align: left;
+  font-size: 14px;
+  color: #444;
+  padding-right: 5px;
+  width: 30%;
+  background: #f7f7f7;
 }
 .inquiry td {
-    font-size: 13px;
+  font-size: 13px;
 }
 .entry-content .inquiry tr,
 .entry-content table {
-    border: solid 1px #d7d7d7
+  border: solid 1px #d7d7d7;
 }
 .haveto {
-    font-size: 7px;
-    padding: 5px;
-    background: #ff9393;
-    color: #fff;
-    border-radius: 2px;
-    margin-right: 5px;
-    position: relative;
-    bottom: 1px
+  font-size: 7px;
+  padding: 5px;
+  background: #ff9393;
+  color: #fff;
+  border-radius: 2px;
+  margin-right: 5px;
+  position: relative;
+  bottom: 1px;
 }
 .any {
-    font-size: 7px;
-    padding: 5px;
-    background: #93c9ff;
-    color: #fff;
-    border-radius: 2px;
-    margin-right: 5px;
-    position: relative;
-    bottom: 1px
+  font-size: 7px;
+  padding: 5px;
+  background: #93c9ff;
+  color: #fff;
+  border-radius: 2px;
+  margin-right: 5px;
+  position: relative;
+  bottom: 1px;
 }
 .verticallist .wpcf7-list-item {
-    display: block
+  display: block;
 }
 #formbtn {
-    display: block;
-    padding: 15px;
-    width: 350px;
-    background: #000;
-    color: #fff;
-    font-size: 18px;
-    font-weight: 700;
-    border-radius: 2px;
-    margin: 25px auto 0;
-    border: 2px solid #000;
-	transition: 0.7s
+  display: block;
+  padding: 15px;
+  width: 350px;
+  background: #000;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 2px;
+  margin: 25px auto 0;
+  border: 2px solid #000;
+  transition: 0.7s;
 }
 #formbtn:hover {
-    background: #fff;
-		color: #000;
-		border: 2px solid #000
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
 }
 th {
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 13px
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 13px;
 }
 td {
-    padding: 12px
+  padding: 12px;
 }
 input,
 select,
 textarea {
-    border: 1px solid #dfdfdf;
-    letter-spacing: 1px;
-    margin: 0;
-    max-width: 100%;
-    resize: none
+  border: 1px solid #dfdfdf;
+  letter-spacing: 1px;
+  margin: 0;
+  max-width: 100%;
+  resize: none;
 }
 .wpcf7-list-item {
-    display: block !important;
-    margin-top: 16px !important;
+  display: block !important;
+  margin-top: 16px !important;
 }
 .wpcf7 {
-    width: 80%;
-    margin: 120px auto;
+  width: 80%;
+  margin: 120px auto;
 }
 .inquiry {
+  width: 100%;
+}
+
+@media screen and (max-width: 1240px) {
+  tr span {
+    display: block;
+    padding-top: 16px;
+  }
+  .any,
+  .haveto {
+    display: inline;
+  }
+  .wpcf7-form-control-wrap {
+    padding-top: 0;
+  }
+  .wpcf7-form-control {
+    padding-top: 0;
+  }
+  .wpcf7-list-item {
+    padding-top: 0;
+  }
+  .wpcf7-list-item-label {
+    display: inline-block;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .wpcf7 {
     width: 100%;
+  }
 }
 
-
-@media screen and (max-width:1240px) {
-    tr span {
-        display: block;
-        padding-top: 16px;
-    }
-    .any,.haveto {
-        display: inline;
-    }
-    .wpcf7-form-control-wrap {
-        padding-top: 0;
-    }
-    .wpcf7-form-control {
-        padding-top: 0;
-    }
-    .wpcf7-list-item {
-        padding-top: 0;
-    }
-    .wpcf7-list-item-label {
-        display: inline-block;
-        padding-top: 0;
-    }
-}
-@media screen and (max-width:767px) {
-    .wpcf7 {
-        width: 100%;
-    }
+.checkbox input,
+.input2 {
+  display: inherit;
 }
 
-.checkbox input, .input2 {
-	    display: inherit;
+.wpcf7-form-control-wrap {
+  display: block;
+  width: 100%;
+  margin-bottom: 0;
+  padding: 0 12px;
+  border: 0;
+  border-radius: 3px;
+  background-color: #eff1f5;
+  box-shadow: none;
+  color: #5c6b80;
+  font-size: 1em;
+  vertical-align: middle;
+  line-height: 45px;
+  transition: background-color 0.24s ease-in-out;
 }
-
-.wpcf7-form-control-wrap{
-	    display: block;
-    width: 100%;
-    margin-bottom: 0;
-    padding: 0 12px;
-    border: 0;
-    border-radius: 3px;
-    background-color: #eff1f5;
-    box-shadow: none;
-    color: #5c6b80;
-    font-size: 1em;
-    vertical-align: middle;
-    line-height: 45px;
-    transition: background-color 0.24s ease-in-out;
-}
-

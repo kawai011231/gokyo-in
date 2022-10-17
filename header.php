@@ -37,11 +37,11 @@
         <nav class="header_nav" id="js-nav">
           <ul class="header_list">
             <li><a href="https://gokyoin.com/" class="header_link">TOP</a></li>
-            <li><a href="https://gokyoin.com/overview" class="header_link">御蕎印プロジェクトとは</a></li>
-            <li><a href="https://gokyoin.com/explanation" class="header_link">越前そばとは</a></li>
-            <li><a href="https://gokyoin.com/store" class="header_link">越前そば名店紹介</a></li>
+            <li><a href="https://gokyoin.com/overview" class="header_link">御蕎印プロジェクト</a></li>
+            <li><a href="https://gokyoin.com/explanation" class="header_link">越前おろしそばとは</a></li>
+            <li><a href="https://gokyoin.com/store" class="header_link">御蕎印参加店舗紹介</a></li>
             <li><a href="https://gokyoin.com/#cource" class="header_link">モデルコース</a></li>
-            <li><a href="https://gokyoin.com/blog" class="header_link">越前そば名店ブログ</a></li>
+            <li><a href="https://gokyoin.com/blog" class="header_link">越前おろしそばブログ</a></li>
             <li><a href="https://gokyoin.com/store" class="header_link">御蕎印帳通販</a></li>
           </ul>
         </nav>
