@@ -14,16 +14,16 @@
                 <a href="https://gokyoin.com/explanation" class="footer_link">越前おろしそばとは</a>
               </li>
               <li class="footer_element">
-                <a href="https://gokyoin.com/store" class="footer_link">御蕎印参加店舗紹介</a>
+                <a href="https://gokyoin.com/#cource" class="footer_link">モデルコース</a>
               </li>
               <li class="footer_element">
-                <a href="https://gokyoin.com/#cource" class="footer_link">モデルコース</a>
+                <a href="https://gokyoin.com/store" class="footer_link">御蕎印参加店舗紹介</a>
               </li>
               <li class="footer_element">
                 <a href="https://gokyoin.com/blog" class="footer_link">越前おろしそばブログ</a>
               </li>
               <li class="footer_element">
-                <a href="https://gokyoin.com/store" class="footer_link">御蕎印帳通販</a>
+                <a href="https://gokyoin.myshopify.com/" target=”_blank” class="footer_link">御蕎印帳通販</a>
               </li>
             </ul>
           </div>

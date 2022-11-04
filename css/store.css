@@ -5,7 +5,7 @@
   box-shadow: #db694c 8px 8px;
 }
 .filter {
-  margin-top: 200px;
+  margin-top: 20px;
 }
 .subpage_store_list {
   padding-top: 80px;
@@ -29,13 +29,13 @@
   flex-wrap: wrap;
 }
 .store_filter_cond li {
-  padding: 12px;
+  padding: 6px;
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
 }
 .store_filter_cond span {
-  padding-left: 8px;
+  padding-left: 4px;
   font-weight: bold;
 }
 
@@ -43,8 +43,8 @@ input {
   display: none;
 }
 .store_label {
-  width: 66px;
-  height: 33px;
+  width: 50px;
+  height: 24px;
   box-sizing: border-box;
   border: 2px solid;
   float: left;
@@ -59,8 +59,8 @@ input[type="checkbox"]:checked + .store_label {
 .store_label:before {
   transition: 0.3s ease;
   content: "";
-  width: 28px;
-  height: 28px;
+  width: 18px;
+  height: 18px;
   position: absolute;
   background: white;
   left: 2px;
@@ -74,10 +74,14 @@ input[type="checkbox"]:checked + label::before {
   left: auto;
   right: 2px;
 }
+.store-categorymap-wrap {
+  max-width: 600px;
+  margin: 40px auto 0;
+}
 
 @media screen and (max-width: 767px) {
   .filter {
-    margin-top: 120px;
+    margin-top: 40px;
   }
   .store_label {
     width: 40px;

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <main>
       <div class="l-container">
+        <p class="top_text top_text_ja">
+          キャッチコピーが入ります
+        </p>
         <div class="subpage_top_wrap">
           <div class="subpage_top_img_box">
             <h1 class="subpage_top_title section_title subpage_ov_title "># 御蕎印プロジェクト</h1>

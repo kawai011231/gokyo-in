@@ -107,8 +107,7 @@
   position: relative;
   display: inline-block;
   position: relative;
-  padding: 40px;
-  padding-left: 60px;
+  padding: 24px 16px 24px 60px;
   border: solid 4px #231815;
   background-color: #fff;
   margin-top: 32px;
@@ -145,7 +144,7 @@
   left: -60px;
 }
 .project-text-box-inner05::before {
-  content: url(../img/ov_number04.png);
+  content: url(../img/ov_number05.png);
   position: absolute;
   top: -40px;
   left: -60px;
@@ -176,14 +175,14 @@
   border: solid 4px #231815;
   z-index: -1;
 }
-.project-text-box-title {
-  font-size: 20px;
-  font-weight: bold;
-  line-height: 1.6;
-}
 .project-text-box-text {
   font-weight: bold;
   line-height: 1.6;
+  font-size: 20px;
+  text-align: left;
+}
+.project-text-box-text a {
+  color: #0000ee;
 }
 .ov_tatiage_title_text {
   background-color: #f4d120;
@@ -457,7 +456,7 @@
   .project-text-box-inner05::before {
     content: "";
     display: inline-block;
-    background-image: url(../img/ov_number04.png);
+    background-image: url(../img/ov_number05.png);
     background-repeat: no-repeat;
     background-size: contain;
     vertical-align: middle;

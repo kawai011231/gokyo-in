@@ -25,25 +25,26 @@
   margin: 0 auto;
 }
 .blog_filter_cond label {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 200px;
-  text-align: center;
-  background-color: #fff;
+  height: 64px;
   padding: 8px 8px;
   margin: 18px;
-  border-radius: 10px;
-  border: 1px solid #000;
+  background-image: url(../img/blog-category-bk.svg);
+  background-size: cover;
 }
 .blog_filter_cond input {
   display: none;
 }
-input[type="checkbox"]:checked ~ #label1,
-input[type="checkbox"]:checked ~ #label2,
-input[type="checkbox"]:checked ~ #label3,
-input[type="checkbox"]:checked ~ #label4,
-input[type="checkbox"]:checked ~ #label5,
-input[type="checkbox"]:checked ~ #label6 {
-  background-color: #db694c;
+.blog_input[type="checkbox"]:checked ~ #label1,
+.blog_input[type="checkbox"]:checked ~ #label2,
+.blog_input[type="checkbox"]:checked ~ #label3,
+.blog_input[type="checkbox"]:checked ~ #label4,
+.blog_input[type="checkbox"]:checked ~ #label5,
+.blog_input[type="checkbox"]:checked ~ #label6 {
+  background-image: url(../img/blog-category-bk-active.svg);
 }
 
 @media screen and (max-width: 900px) {

@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <main>
         <div class="l-container">
+          <p class="top_text top_text_ja">
+          キャッチコピーが入ります
+        </p>
           <div class="subpage_top_wrap">
           <div class="subpage_top_img_box">
             <h1 class="subpage_top_title section_title subpage_blog_title "># 越前おろしそばブログ</h1>
@@ -16,27 +19,27 @@
           <div class="filter" id="js-filter">
             <ul class="filter-cond blog_filter_cond">
               <li>
-                <input type="checkbox" value="カテゴリー" id="input1" />
-                <label id="label1" for="input1">カテゴリー </label>
+                <input class="blog_input" type="checkbox" value="蕎麦" id="input1" />
+                <label id="label1" for="input1">蕎麦</label>
               </li>
               <li>
-                <input type="checkbox" value="こんにちは" id="input2" />
+                <input class="blog_input" type="checkbox" value="こんにちは" id="input2" />
                 <label id="label2" for="input2">こんにちは</label>
               </li>
               <li>
-                <input type="checkbox" value="おはようございます" id="input3" />
+                <input class="blog_input" type="checkbox" value="おはようございます" id="input3" />
                 <label id="label3" for="input3">おはようございます</label>
               </li>
               <li>
-                <input type="checkbox" value="いただきます" id="input4" />
+                <input class="blog_input" type="checkbox" value="いただきます" id="input4" />
                 <label id="label4" for="input4">いただきます</label>
               </li>
               <li>
-                <input type="checkbox" value="いただきます" id="input5" />
+                <input class="blog_input" type="checkbox" value="いただきます" id="input5" />
                 <label id="label5" for="input5">いただきます</label>
               </li>
               <li>
-                <input type="checkbox" value="いただきます" id="input6" />
+                <input class="blog_input" type="checkbox" value="いただきます" id="input6" />
                 <label id="label6" for="input6">いただきます</label>
               </li>
               <!-- /.filter-cond -->
@@ -57,7 +60,14 @@
                     <div class="blog_category"><?php the_category(); ?></div>
                   <a href="<?php the_permalink(); ?>">
                     <p class="blog_text">
-                    <?php the_content(); ?>
+                    <?php
+if ( mb_strlen( $post->post_content, 'UTF-8' ) > 100 ) {
+  $content = mb_substr( strip_tags( $post->post_content ), 0, 100, 'UTF-8' );
+  echo $content . '…';
+} else {
+  echo strip_tags( $post->post_content );
+}
+?>
                     </p>
                   </a>
                   <a href="<?php the_permalink(); ?>">

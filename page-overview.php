@@ -1,6 +1,9 @@
 <?php get_header(); ?>
 <main>
       <div class="l-container">
+        <p class="top_text top_text_ja">
+          キャッチコピーが入ります
+        </p>
         <div class="subpage_top_wrap">
           <div class="subpage_top_img_box">
             <h1 class="subpage_top_title section_title subpage_ov_title "># 御蕎印プロジェクト</h1>
@@ -10,7 +13,7 @@
           </div>
           <div class="subpage_top_text_box ov_shadow">
             <p>
-              「越前おろしそば」×「御朱印」＝「御蕎印（ごきょういん）」<br>
+              「越前おろしそば」×「御朱印」<br>＝「御蕎印（ごきょういん）」<br>
               お蕎麦屋さんだけでも100店舗以上、越前おろしそばを提供しているお店は400店舗を超えるといわれるほど「おろしそば文化」が発展している福井県。<br>
               数多くあるお店ですが、味の違いはもちろんのこと、こだわりや趣、ご主人の想いには店舗ごとの特徴が存在しています。そこで、それらをひとつひとつ御蕎印のデザインとして制作し、それを集めることにより、より楽しく巡ってもらおうという企画です。
           </p>
@@ -44,7 +47,7 @@
               <div class="project-text-box-inner project-text-box-inner01">
                 <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
                 <p class="project-text-box-text">
-                  お好きなデザインの御蕎印帳を購入しよう！裏面にはその場で感想を書き込める工夫も
+                  お好きなデザインの御蕎印帳を購入しよう！裏面にはその場で感想を書き込める工夫も<a href="https://gokyoin.myshopify.com">＜ショップはこちら＞</a>
                 </p>
                 <div class="project-text-box-people01">
               </div>
@@ -52,7 +55,7 @@
               <div class="project-text-box-inner project-text-box-inner02">
                 <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
                 <p class="project-text-box-text">
-                  気になるお店を見つけよう！
+                  気になるお店を見つけよう！<a href="https://gokyoin.com/store/">＜参加店舗はこちら＞</a>
                 </p>
               </div>
               <div class="project-text-box-inner project-text-box-inner03">
@@ -67,7 +70,6 @@
                 <p class="project-text-box-text">
                   おろしそばが運ばれてきたら、その香りを楽しみながら、いよいよ実食！
                 </p>
-                <div class="project-text-box-people03"></div>
               </div>
               <div class="project-text-box-inner project-text-box-inner05">
                 <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->

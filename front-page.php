@@ -49,7 +49,7 @@
                   alt="御朱印の写真"
                   class="overview_card_img"
                 />
-                <p class="overview_card_text_large">
+                <p class="card_text_foot">
                   御蕎印を集めて、お店の数だけ存在する違いを感じよう！
                 </p>
                 <a href="https://gokyoin.com/overview/" class="detail_btn">
@@ -2704,7 +2704,7 @@
                 <div class="explanation_text_card">
                   <div class="explanation_title_wrap">
                     <h2 class="explanation_title section_title">
-                      ＃御蕎印プロジェクト
+                      ＃越前おろしそばとは
                     </h2>
                   </div>
                   <div class="explanation_text_box">
@@ -2726,7 +2726,7 @@
                       </p>
                     </div>
                   </div>
-                  <p class="explanation_text_foot">
+                  <p class="card_text_foot">
                     越前おろしそばの美味しさの秘密を知ったら、その魅力を舌で、肌で、感じる旅に出よう！
                   </p>
                   <a href="https://gokyoin.com/explanation/" class="detail_btn">
@@ -2760,7 +2760,7 @@
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                   <li class="course_element">
-                    <a href="#">
+                    <a href="<?php the_permalink(); ?>">
                       <div class="course_element_inner">
                         <div class="course_number"><?php
 $number = (max(1, $paged) - 1) * $the_query->query_vars['posts_per_page'] + $the_query->current_post + 1;
@@ -2841,14 +2841,14 @@ if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
           <div class="store_wrap">
             <div class="l-container">
               <div class="store_title_wrap">
-                <h2 class="store_title section_title">＃名店紹介</h2>
+                <h2 class="store_title section_title">＃御蕎印参加店舗紹介</h2>
               </div>
               <ul class="store_list">
-              <?php $the_query = new WP_Query( array( 'post_type' => 'shop', 'posts_per_page' => 6 ) ); ?>
+              <?php $the_query = new WP_Query( array( 'post_type' => 'shop', 'posts_per_page' => 3 ) ); ?>
             <?php if ( $the_query->have_posts() ) : ?>
             <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                 <li class="store_element">
-                  <a href="#" class="store_link">
+                  <a href="<?php the_permalink(); ?>" class="store_link">
                     <div class="shop_name_wrap">
                       <h3 class="shop_name"><?php the_title(); ?></h3>
                       <p class="shop_text">
@@ -2896,7 +2896,7 @@ if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
         <section class="blog">
           <div class="l-container">
             <div class="store_title_wrap">
-              <h2 class="blog_title section_title">＃越前そばブログ</h2>
+              <h2 class="blog_title section_title">＃越前おろしそばブログ</h2>
             </div>
             <ul class="blog_card_list">
             <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => 4 ) ); ?>
@@ -2934,6 +2934,15 @@ if ( mb_strlen( $post->post_content, 'UTF-8' ) > 100 ) {
               <?php wp_reset_postdata(); ?>
               <?php endif; ?>
             </ul>
+            <a href="https://gokyoin.com/blog/" class="detail_btn blog_detail_btn">
+                  <span>▼</span>
+                  <p class="detail_btn_text">詳しく見る</p>
+                  <img
+                    src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png"
+                    alt=""
+                    class="detail_btn_img"
+                  />
+                </a>
             <img src="<?= get_template_directory_uri(); ?>/img/person7.png" alt="" class="blog_person" />
           </div>
         </section>

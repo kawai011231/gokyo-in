@@ -1,10 +1,13 @@
 <?php get_header(); ?>
 <main>
         <div class="l-container">
+          <p class="top_text top_text_ja">
+          キャッチコピーが入ります
+        </p>
           <div class="subpage_top_wrap">
             <div class="subpage_top_img_box">
               <h1 class="subpage_top_title section_title subpage_ex_title">
-                # 越前そばとは
+                # 越おろしそばとは
               </h1>
               <div class="subpage_top_img ex_shadow">
                 <img src="<?= get_template_directory_uri(); ?>/img/ex_overview.png" alt="" />
@@ -184,7 +187,7 @@
                 <div class="method_text_item">
                   <div class="method_text_text">
                     <div class="method_head">
-                      <img src="<?= get_template_directory_uri(); ?>/img/ex_headline.png" alt="" />
+                      <img src="<?= get_template_directory_uri(); ?>/img/ex_headline1.png" alt="" />
                     </div>
                     <div class="method_text">
                       <p>
@@ -205,7 +208,7 @@
                 <div class="method_text_item">
                   <div class="method_text_text">
                     <div class="method_head">
-                      <img src="<?= get_template_directory_uri(); ?>/img/ex_headline.png" alt="" />
+                      <img src="<?= get_template_directory_uri(); ?>/img/ex_headline2.png" alt="" />
                     </div>
                     <div class="method_text">
                       <p>
@@ -226,7 +229,7 @@
                 <div class="method_text_item">
                   <div class="method_text_text">
                     <div class="method_head">
-                      <img src="<?= get_template_directory_uri(); ?>/img/ex_headline.png" alt="" />
+                      <img src="<?= get_template_directory_uri(); ?>/img/ex_headline3.png" alt="" />
                     </div>
                     <div class="method_text">
                       <p>
@@ -260,12 +263,28 @@
                 <div class="ex_secret_text">
                   越前おろしそばの美味しさ解説
                 </div>
-                <div class="ex_secret_img">
-                  <img src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png" alt="" />
+                <div class="ex_secret_bottom">
+                  <div class="ex_secret_element">
+                    <p class="ex_secret_element_title">挽きぐるみ</p>
+                    <p class="ex_secret_element_text">一番粉の甘み、二番粉の上品さ、三番粉の香りと色、栄養を兼ね備えた挽きぐるみのそば粉は、色も味も香りも風味も全てが蕎麦らしいものになります。</p>
+                  </div>
+                  <div class="ex_secret_element">
+                    <p class="ex_secret_element_title">石臼挽き</p>
+                    <p class="ex_secret_element_text">石臼を使いそばの実を粉にする事で機械よりも摩擦が発生しないので、そばの良い風味が損なわれないまま粉にする事が出来る為、香り高い蕎麦が楽しめます。</p>
+                  </div>
+                  <div class="ex_secret_element">
+                    <p class="ex_secret_element_title">麺のコシ</p>
+                    <p class="ex_secret_element_text">つなぎに強力粉を使用し、茹で上げた後冷水にさらす事でより歯ごたえのある食感になります。</p>
+                  </div>
+                  <div class="ex_secret_element">
+                    <p class="ex_secret_element_title">辛味大根</p>
+                    <p class="ex_secret_element_text">越前おろしそばに欠かせないのが”辛味大根”。辛味大根は普通の大根に比べ小さく、水気が少なくピリッと辛いのが特徴です。辛味大根の「辛さ」と「そばの香りが強くコシのある麺」がマッチして、そばの旨味や風味をより高めてくれます。</p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </main>
+      </div>
+    </main>
 <?php get_footer(); ?>

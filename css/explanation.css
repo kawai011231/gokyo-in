@@ -74,7 +74,6 @@
 }
 .ex_how_wrap {
   margin-top: 200px;
-  background-color: rgba(255, 255, 255, 0.8);
 }
 .ex_how_btn_wrap {
   margin-top: 200px;
@@ -99,7 +98,7 @@
   position: absolute;
   text-align: center;
   color: #fff;
-  font-size: 28px;
+  font-size: 24px;
   line-height: 2;
   letter-spacing: 0.1em;
   top: 16%;
@@ -110,7 +109,7 @@
   width: 50%;
   margin: 0 auto;
   margin-top: -60px;
-  margin-bottom: 120px;
+  margin-bottom: 0px;
   position: relative;
   padding: 1em 1.5em;
   color: #fff;
@@ -300,6 +299,26 @@
   background-color: #8fc5f5;
   margin-bottom: 80px;
 }
+.ex_secret_bottom {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.ex_secret_element {
+  padding: 16px;
+  max-width: 460px;
+  width: 47%;
+  line-height: 1.7;
+}
+.ex_secret_element_title {
+  background-color: #000;
+  color: #fff;
+  padding: 8px;
+}
+.ex_secret_element_text {
+  background-color: #fff;
+  padding: 8px;
+}
 @media screen and (max-width: 1100px) {
   .method_text {
     margin-left: 36px;
@@ -326,10 +345,6 @@
   }
   .cbp_tmtimeline > li .cbp_tmlabel {
     padding: 1.5em;
-  }
-  .noren_text {
-    line-height: 1.8;
-    font-size: 24px;
   }
   .ex_how_title {
     width: fit-content;
@@ -388,6 +403,10 @@
   .ex_secret_text {
     font-size: 32px;
   }
+  .noren_text {
+    line-height: 1.8;
+    font-size: 18px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -416,6 +435,13 @@
   .sub_overview_card_text_small {
     padding: 20px 20px 40px;
     font-size: 16px;
+  }
+  .ex_how_btn_box {
+    flex-direction: column;
+    max-width: 300px;
+  }
+  .ex_how_btn_box li {
+    padding: 20px 0;
   }
 
   .cbp_tmtimeline > li .cbp_tmtime {
@@ -458,7 +484,7 @@
   }
   .noren_text {
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
   }
   .ex_how_btn_wrap {
     margin-top: 120px;
@@ -544,5 +570,11 @@
   }
   .cbp_tmlabel p {
     font-size: 14px;
+  }
+  .ex_secret_bottom {
+    flex-direction: column;
+  }
+  .ex_secret_element {
+    width: 100%;
   }
 }
