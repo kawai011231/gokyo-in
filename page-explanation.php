@@ -24,30 +24,36 @@
             <div class="ex_charm_head">
               <div class="explanation_flag_wrap">
                 <div class="explanation_flag">
+                  <div>
                     <img
-                      src="<?= get_template_directory_uri(); ?>/img/crown.png"
-                      alt=""
-                      class="explanation_flag_crown"
+                    src="<?= get_template_directory_uri(); ?>/img/crown.png"
+                    alt=""
+                    class="explanation_flag_crown"
                     />
                     <p class="explanation_flag_heading">そばが美味しい都道府県　2年連続</p>
+                  </div>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
                   <div class="explanation_flag">
-                    <img
+                    <div>
+                      <img
                       src="<?= get_template_directory_uri(); ?>/img/crown.png"
                       alt=""
                       class="explanation_flag_crown"
-                    />
-                    <p class="explanation_flag_heading">地元ならではのおいしい食べ物が多かった都道府県</p>
+                      />
+                      <p class="explanation_flag_heading">地元ならではのおいしい食べ物が多かった都道府県</p>
+                    </div>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
                   <div class="explanation_flag">
-                    <img
+                    <div>
+                      <img
                       src="<?= get_template_directory_uri(); ?>/img/crown.png"
                       alt=""
                       class="explanation_flag_crown"
-                    />
-                    <p class="explanation_flag_heading">蕎麦鑑定士が選ぶ日本一おいしいそば産地大賞</p>
+                      />
+                      <p class="explanation_flag_heading">蕎麦鑑定士が選ぶ日本一おいしいそば産地大賞</p>
+                    </div>
                     <p class="explanation_flag_number">NO.<span>1</span></p>
                   </div>
               </div>

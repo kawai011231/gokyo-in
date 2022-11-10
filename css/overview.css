@@ -63,7 +63,7 @@
   width: fit-content;
   color: #f4d106;
   font-weight: bold;
-  font-size: 72px;
+  font-size: 64px;
   bottom: 0;
   line-height: 1.5;
   text-shadow: 1px 1px 0px #000, -1px -1px 0px #000, -1px 1px 0px #000,
@@ -74,13 +74,10 @@
   font-size: 52px;
 }
 .ov_flow_inner_wrap {
-  text-align: center;
+  width: 95%;
+  margin: 0 auto;
 }
 .ov_flow_title_text {
-  background-color: #f4d120;
-  padding: 20px 40px;
-  position: relative;
-  padding: 20px 24px;
   display: inline-block;
   position: relative;
   padding: 30px;
@@ -90,7 +87,6 @@
   text-align: center;
   font-weight: bold;
   margin-top: 32px;
-  margin-bottom: 120px;
   box-sizing: border-box;
 }
 .ov_flow_title_text::after {
@@ -103,6 +99,15 @@
   border: solid 4px #231815;
   z-index: -1;
 }
+.project-text-box-inner-wrap {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 60px 0;
+}
+.project-text-box-inner-wrap-rev {
+  flex-direction: row-reverse;
+}
 .project-text-box-inner {
   position: relative;
   display: inline-block;
@@ -110,14 +115,11 @@
   padding: 24px 16px 24px 60px;
   border: solid 4px #231815;
   background-color: #fff;
-  margin-top: 32px;
-  margin-bottom: 120px;
   box-sizing: border-box;
-  width: 60%;
+  width: 57%;
 }
-.project-text-box-inner02,
-.project-text-box-inner04 {
-  margin-left: 200px;
+.project-text-box-img {
+  width: 37%;
 }
 .project-text-box-inner01::before {
   content: url(../img/ov_number01.png);
@@ -149,22 +151,7 @@
   top: -40px;
   left: -60px;
 }
-.project-text-box-people01 {
-  content: url(../img/ov_flow_person01.png);
-  position: absolute;
-  left: -80px;
-}
-.project-text-box-people02 {
-  content: url(../img/ov_flow_person02.png);
-  position: absolute;
-  left: -180px;
-  top: -140px;
-}
-.project-text-box-people03 {
-  content: url(../img/ov_flow_person03.png);
-  position: absolute;
-  right: -80px;
-}
+
 .project-text-box-inner::after {
   content: "";
   position: absolute;
@@ -224,7 +211,7 @@
 
 @media screen and (max-width: 1000px) {
   .ov_charm_title {
-    font-size: 72px;
+    font-size: 58px;
   }
   .ov_charm_title_small {
     font-size: 48px;
@@ -283,10 +270,10 @@
 }
 @media screen and (max-width: 900px) {
   .ov_charm_title {
-    font-size: 60px;
+    font-size: 52px;
   }
   .ov_charm_title_small {
-    font-size: 40px;
+    font-size: 38px;
   }
   .sub_explanation_flag::after {
     bottom: -78px;
@@ -321,7 +308,6 @@
   }
   .sub_overview_card_text_small {
     padding: 20px 20px 40px;
-    font-size: 16px;
   }
 
   .cbp_tmtimeline > li .cbp_tmtime {
@@ -403,16 +389,24 @@
   }
   .ov_flow_inner_wrap {
     margin-left: 40px;
+    width: 93%;
   }
-  .project-text-box-people01 {
-    top: 80px;
-    max-width: 40%;
+  .project-text-box-inner-wrap {
+    flex-direction: column;
+    padding: 32px 0;
   }
   .project-text-box-inner {
     width: 90%;
     padding: 20px;
     margin: 40px auto;
   }
+  .project-text-box-text {
+    font-size: 16px;
+  }
+  .project-text-box-img {
+    width: 90%;
+  }
+
   .project-text-box-inner01::before {
     content: "";
     display: inline-block;
@@ -504,10 +498,10 @@
 }
 @media screen and (max-width: 600px) {
   .ov_charm_title {
-    font-size: 48px;
+    font-size: 46px;
   }
   .ov_charm_title_small {
-    font-size: 32px;
+    font-size: 30px;
   }
   .sub_explanation_flag_wrap {
     width: 95%;

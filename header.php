@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/store.css" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/overview.css">
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/single.css" />
+    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/css/top.css" />
     <title>御蕎印プロジェクト</title>
     <?php wp_head(); ?>
   </head>
@@ -27,7 +28,12 @@
     <div class="toppage_wrap">
       <header>
         <div class="header_spacer"></div>
-        <img class="header_noren" src="<?= get_template_directory_uri(); ?>/img/noren_white.png" />
+        <div id="hidden-header">
+          <img class="header_noren" src="<?= get_template_directory_uri(); ?>/img/noren_white.png" />
+            <a href="https://gokyoin.com/"><img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="" class="header_logo" />
+          <img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="" class="header_logo" />
+          </a>
+        </div>
         <input type="checkbox" id="menu_check" />
           <label
             id="js-menuTrigger"
@@ -45,7 +51,7 @@
             <li><a href="https://gokyoin.myshopify.com" target=”_blank” class="header_link">御蕎印帳通販</a></li>
           </ul>
         </nav>
-        <a href="https://gokyoin.com/"><img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="" class="header_logo" />
-          <img src="<?= get_template_directory_uri(); ?>/img/logo.png" alt="" class="header_logo" />
-        </a>
       </header>
+      <div id="fixed-header" class="fixed-header">
+        fixed-header
+      </div>

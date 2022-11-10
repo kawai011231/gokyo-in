@@ -58,13 +58,12 @@
   margin: 16px 2%;
 }
 .single_contents_wrap {
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .single_contents_title {
   font-size: 24px;
 }
 .single_contents_text {
-  margin-top: 40px;
   line-height: 1.6;
 }
 .single_map_wrap {
@@ -74,7 +73,7 @@
   border-top: 1px #000 solid;
   border-bottom: 1px #000 solid;
   padding: 16px;
-  margin-top: 80px;
+  margin-top: 40px;
 }
 .single_map_text {
   line-height: 2;
@@ -148,19 +147,18 @@
   }
 }
 
-
 .toppage_wrap_single::before {
   background-image: none;
   content: "";
-    display: block;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    background-color: #f2eeee;
-    background-size: cover;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
+  background-color: #f2eeee;
+  background-size: cover;
 }
 
 .single_contents_text img {

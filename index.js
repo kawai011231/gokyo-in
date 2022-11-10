@@ -1,3 +1,17 @@
+(function () {
+  const fh = document.getElementById("fixed-header");
+  const hh = document.getElementById("hidden-header");
+  window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+      fh.classList.add("is-show");
+      hh.classList.add("is-hidden");
+    } else {
+      fh.classList.remove("is-show");
+      hh.classList.remove("is-hidden");
+    }
+  });
+})();
+
 const widget = document.getElementById("js-filter");
 const checkboxes = widget.querySelectorAll(
   '.filter-cond input[type="checkbox"]'

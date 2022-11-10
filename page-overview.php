@@ -43,43 +43,62 @@
             <p class="ov_flow_title_text">プロジェクト参加の流れ</p>
           </div>
           <div class="ov_flow_inner_wrap">
-            <div style="z-index: 1;position:relative;">
-              <div class="project-text-box-inner project-text-box-inner01">
-                <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
-                <p class="project-text-box-text">
-                  お好きなデザインの御蕎印帳を購入しよう！裏面にはその場で感想を書き込める工夫も<a href="https://gokyoin.myshopify.com">＜ショップはこちら＞</a>
-                </p>
-                <div class="project-text-box-people01">
+              <div class="project-text-box-inner-wrap">
+                <div class="project-text-box-inner project-text-box-inner01">
+                  <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
+                  <p class="project-text-box-text">
+                    お好きなデザインの御蕎印帳を購入しよう！裏面にはその場で感想を書き込める工夫も<a href="https://gokyoin.myshopify.com">＜ショップはこちら＞</a>
+                  </p>
+                </div>
+                <div class="project-text-box-img">
+                  <img src="<?= get_template_directory_uri(); ?>/img/overview_img2.png" alt="">
+                </div>
               </div>
+              <div class="project-text-box-inner-wrap project-text-box-inner-wrap-rev">
+                <div class="project-text-box-inner project-text-box-inner02">
+                  <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
+                  <p class="project-text-box-text">
+                    気になるお店を見つけよう！<a href="https://gokyoin.com/store/">＜参加店舗はこちら＞</a>
+                  </p>
+                </div>
+                <div class="project-text-box-img">
+                  <img src="<?= get_template_directory_uri(); ?>/img/overview_img2.png" alt="">
+                </div>
               </div>
-              <div class="project-text-box-inner project-text-box-inner02">
-                <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
-                <p class="project-text-box-text">
-                  気になるお店を見つけよう！<a href="https://gokyoin.com/store/">＜参加店舗はこちら＞</a>
-                </p>
+              <div class="project-text-box-inner-wrap">
+                <div class="project-text-box-inner project-text-box-inner03">
+                  <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
+                  <p class="project-text-box-text">
+                    実際にお店に足を運ぼう！そこでまずはお店の趣を楽しみながら、おろしそばを注文
+                  </p>
+                </div>
+                <div class="project-text-box-img">
+                  <img src="<?= get_template_directory_uri(); ?>/img/overview_img2.png" alt="">
+                </div>
               </div>
-              <div class="project-text-box-inner project-text-box-inner03">
-                <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
-                <p class="project-text-box-text">
-                  実際にお店に足を運ぼう！そこでまずはお店の趣を楽しみながら、おろしそばを注文
-                </p>
-                <div class="project-text-box-people02"></div>
+              <div class="project-text-box-inner-wrap project-text-box-inner-wrap-rev">
+                <div class="project-text-box-inner project-text-box-inner04">
+                  <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
+                  <p class="project-text-box-text">
+                    おろしそばが運ばれてきたら、その香りを楽しみながら、いよいよ実食！
+                  </p>
+                </div>
+                <div class="project-text-box-img">
+                  <img src="<?= get_template_directory_uri(); ?>/img/overview_img2.png" alt="">
+                </div>
               </div>
-              <div class="project-text-box-inner project-text-box-inner04">
-                <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
-                <p class="project-text-box-text">
-                  おろしそばが運ばれてきたら、その香りを楽しみながら、いよいよ実食！
-                </p>
-              </div>
-              <div class="project-text-box-inner project-text-box-inner05">
-                <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
-                <p class="project-text-box-text">
-                  お会計時に「御蕎印」購入の旨をお伝えください。越前和紙で作られたそのお店でしか購入出来ない御蕎印紙を御蕎印帳に貼付していただき、味の思い出と共に大切にお納めください。
-                </p>
-                <div class="project-text-box-people03"></div>
+              <div class="project-text-box-inner-wrap">
+                <div class="project-text-box-inner project-text-box-inner05">
+                  <!-- <p class="project-text-box-title">テキストが入ります。テキストが入ります。</p> -->
+                  <p class="project-text-box-text">
+                    お会計時に「御蕎印」購入の旨をお伝えください。越前和紙で作られたそのお店でしか購入出来ない御蕎印紙を御蕎印帳に貼付していただき、味の思い出と共に大切にお納めください。
+                  </p>
+                </div>
+                <div class="project-text-box-img">
+                  <img src="<?= get_template_directory_uri(); ?>/img/overview_img2.png" alt="">
+                </div>
               </div>
             </div>
-          </div>
         </div>
         <!-- <div class="over_flow_wrap">
           <div class="ov_tatiage_title">

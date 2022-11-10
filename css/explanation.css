@@ -432,10 +432,6 @@
     width: 80%;
     margin: 40px auto;
   }
-  .sub_overview_card_text_small {
-    padding: 20px 20px 40px;
-    font-size: 16px;
-  }
   .ex_how_btn_box {
     flex-direction: column;
     max-width: 300px;

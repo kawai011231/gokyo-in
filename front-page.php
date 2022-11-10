@@ -4,80 +4,53 @@
         <p class="top_text">
           GOKYO-IN <br class="br_sp" />PROJECT <br class="br_sp" />in FUKUI
         </p>
-        <section class="overview">
+        <section class="project-about">
           <div class="l-container">
-            <div class="overview_wrap">
-              <div class="overview_card">
-                <div class="overview_title_wrap">
-                  <h2 class="overview_title section_title">
-                    ＃御蕎印プロジェクト
-                  </h2>
-                </div>
-                <img
-                  src="<?= get_template_directory_uri(); ?>/img/overview_img1.png"
-                  alt="越前そばの写真"
-                  class="overview_card_img"
-                />
-                <p class="card_small_heading overview_small_heading">
-                  SOBA×FUKUI×PEOPLE
-                </p>
-                <div class="overview_card_text_wrap">
-                  <!-- <p class="overview_card_text_primary">
-                    うまさの思い出をつなげてゆく、ふくいくたる越前おろしそばを巡る旅へ
-                  </p> -->
-                  <p class="overview_card_text_primary">
-                    うまさの思い出をつなげ
-                  </p>
-                  <p class="overview_card_text_primary">
-                    てゆく、ふくいくたる
-                  </p>
-                  <p class="overview_card_text_primary">
-                    越前おろしそばを巡る旅へ
-                  </p>
-                </div>
-              </div>
-              <div class="overview_card">
-                <p class="overview_card_text_small">
-                  <span>
-                    「越前おろしそば」×「御朱印」＝「御蕎印（ごきょういん）」<br>
-                    お蕎麦屋さんだけも100店舗以上、越前おろしそばを提供しているお店は400店舗を超えるといわれるほど「おろしそば文化」が発展している福井県。<br>
-                    数多くあるお店ですが、味の違いはもちろんのこと、こだわりや趣、ご主人の想いには店舗ごとの特徴が存在しています。そこで、それらをひとつひとつ御蕎印のデザインとして制作し、それを集めることにより、より楽しく巡ってもらおうという企画です。
-                  </span>
-                </p>
-                <img
-                  src="<?= get_template_directory_uri(); ?>/img/overview_img2.png"
-                  alt="御朱印の写真"
-                  class="overview_card_img"
-                />
-                <p class="card_text_foot">
-                  御蕎印を集めて、お店の数だけ存在する違いを感じよう！
-                </p>
-                <a href="https://gokyoin.com/overview/" class="detail_btn">
-                  <span>▼</span>
-                  <p class="detail_btn_text">詳しく見る</p>
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png"
-                    alt=""
-                    class="detail_btn_img"
-                  />
-                </a>
-              </div>
+            <h2 class="project-about_title section_title">
+              ＃御蕎印プロジェクト
+            </h2>
+            <p class="project-about_text">
+              <span class="project-about_text-mizutama">う</span>まさの<span
+                class="project-about_text-mizutama"
+                >思</span
+              >い出を<span class="project-about_text-mizutama">つ</span
+              >なげてゆく、<br /><span class="project-about_text-mizutama"
+                >ふ</span
+              >くいくたる<span class="project-about_text-mizutama">越</span
+              >前おろしそばを巡る<span class="project-about_text-mizutama"
+                >旅</span
+              >へ
+            </p>
+            <div class="project-about_img-wrap">
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/person2.png"
+                alt=""
+                class="top-project-aboutimg-person"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg1.png"
+                alt=""
+                class="top-project-aboutimg1"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg2.png"
+                alt=""
+                class="top-project-aboutimg2"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg3.png"
+                alt=""
+                class="top-project-aboutimg3"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg4.png"
+                alt=""
+                class="top-project-aboutimg4"
+              />
             </div>
-            <img
-              src="<?= get_template_directory_uri(); ?>/img/person1.png"
-              alt=""
-              class="overview_person1 overview_person"
-            />
-            <img
-              src="<?= get_template_directory_uri(); ?>/img/person2.png"
-              alt=""
-              class="overview_person2 overview_person"
-            />
-            <img
-              src="<?= get_template_directory_uri(); ?>/img/person3.png"
-              alt=""
-              class="overview_person3 overview_person"
-            />
+            <div class="top-section-button top-section-button-yellow">
+              <a href="https://gokyoin.com/overview/">もっと見る</a>
+            </div>
           </div>
         </section>
         <section class="insta">
@@ -2655,96 +2628,52 @@
             </ul>
           </div>
         </section>
-        <section class="explanation">
+        <section class="soba-about">
           <div class="l-container">
-            <div class="explanation_wrap">
-              <div class="explanation_accessory_wrap">
-                <div class="explanation_flag_wrap">
-                  <div class="explanation_flag">
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/crown.png"
-                      alt=""
-                      class="explanation_flag_crown"
-                    />
-                    <p class="explanation_flag_heading">そばが美味しい都道府県　2年連続</p>
-                    <p class="explanation_flag_number">NO.<span>1</span></p>
-                  </div>
-                  <div class="explanation_flag">
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/crown.png"
-                      alt=""
-                      class="explanation_flag_crown"
-                    />
-                    <p class="explanation_flag_heading">地元ならではのおいしい食べ物が多かった都道府県</p>
-                    <p class="explanation_flag_number">NO.<span>1</span></p>
-                  </div>
-                  <div class="explanation_flag">
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/crown.png"
-                      alt=""
-                      class="explanation_flag_crown"
-                    />
-                    <p class="explanation_flag_heading">蕎麦鑑定士が選ぶ日本一おいしいそば産地大賞</p>
-                    <p class="explanation_flag_number">NO.<span>1</span></p>
-                  </div>
-                </div>
-                <div class="explanation_circle">
-                  <a href="https://gokyoin.com/explanation#history" class="explanation_circle_link"
-                    >越前そばの歴史を知る</a
-                  >
-                  <a href="https://gokyoin.com/explanation#method" class="explanation_circle_link"
-                    >越前そばの製法を知る</a
-                  >
-                  <a href="https://gokyoin.com/explanation#secret" class="explanation_circle_link"
-                    >越前そばの味の秘密を知る</a
-                  >
-                </div>
-              </div>
-              <div class="explanation_text_wrap">
-                <div class="explanation_text_card">
-                  <div class="explanation_title_wrap">
-                    <h2 class="explanation_title section_title">
-                      ＃越前おろしそばとは
-                    </h2>
-                  </div>
-                  <div class="explanation_text_box">
-                    <p class="card_small_heading explanation_small_heading">
-                      ABOUT ECHIZEN SOBA
-                    </p>
-                    <div class="explanation_text_body">
-                      <img
-                        src="<?= get_template_directory_uri(); ?>/img/explanation_img.png"
-                        alt=""
-                        class="explanation_img"
-                      />
-                      <p class="explanation_text">
-                       越前おろしそばは何故日本一美味しいのか。その理由はいくつかあります。<br>
-                       ・石臼挽き<br>
-                       ・挽きぐるみ<br>
-                       ・数多く存在する在来種の存在<br>
-                       これら以外にも、何故大根おろしと一緒に食べるのか、など越前おろしそばの美味しさの秘密をご紹介します。
-                      </p>
-                    </div>
-                  </div>
-                  <p class="card_text_foot">
-                    越前おろしそばの美味しさの秘密を知ったら、その魅力を舌で、肌で、感じる旅に出よう！
-                  </p>
-                  <a href="https://gokyoin.com/explanation/" class="detail_btn">
-                    <span>▼</span>
-                    <p class="detail_btn_text">詳しく見る</p>
-                    <img
-                      src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png"
-                      alt=""
-                      class="detail_btn_img"
-                    />
-                  </a>
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/person4.png"
-                    alt=""
-                    class="explanation_person"
-                  />
-                </div>
-              </div>
+            <h2 class="soba-about_title section_title">
+              ＃越前おろしそば
+            </h2>
+            <p class="soba-about_text">
+              <span class="soba-about_text-mizutama">う</span>まさの<span
+                class="soba-about_text-mizutama"
+                >思</span
+              >い出を<span class="soba-about_text-mizutama">つ</span
+              >なげてゆく、<br /><span class="soba-about_text-mizutama"
+                >ふ</span
+              >くいくたる<span class="soba-about_text-mizutama">越</span
+              >前おろしそばを巡る<span class="soba-about_text-mizutama"
+                >旅</span
+              >へ
+            </p>
+            <div class="project-about_img-wrap">
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/person2.png"
+                alt=""
+                class="top-project-aboutimg-person"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg1.png"
+                alt=""
+                class="top-project-aboutimg1"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg2.png"
+                alt=""
+                class="top-project-aboutimg2"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg3.png"
+                alt=""
+                class="top-project-aboutimg3"
+              />
+              <img
+                src="<?= get_template_directory_uri(); ?>/img/top-project-aboutimg4.png"
+                alt=""
+                class="top-project-aboutimg4"
+              />
+            </div>
+            <div class="top-section-button top-section-button-blue">
+              <a href="https://gokyoin.com/explanation/">もっと見る</a>
             </div>
           </div>
         </section>
@@ -2880,15 +2809,9 @@ if ( mb_strlen( $post->post_content, 'UTF-8' ) > 20 ) {
               <?php wp_reset_postdata(); ?>
               <?php endif; ?>
               </ul>
-              <a href="https://gokyoin.com/store/" class="detail_btn store_detail_btn">
-                <span>▼</span>
-                <p class="detail_btn_text store_detail_btn_text">詳しく見る</p>
-                <img
-                  src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png"
-                  alt=""
-                  class="detail_btn_img"
-                />
-              </a>
+              <div class="top-section-button top-section-button-orange">
+                <a href="https://gokyoin.com/store/">もっと見る</a>
+              </div>
               <img src="<?= get_template_directory_uri(); ?>/img/person6.png" alt="" class="store_person" />
             </div>
           </div>
@@ -2934,15 +2857,9 @@ if ( mb_strlen( $post->post_content, 'UTF-8' ) > 100 ) {
               <?php wp_reset_postdata(); ?>
               <?php endif; ?>
             </ul>
-            <a href="https://gokyoin.com/blog/" class="detail_btn blog_detail_btn">
-                  <span>▼</span>
-                  <p class="detail_btn_text">詳しく見る</p>
-                  <img
-                    src="<?= get_template_directory_uri(); ?>/img/detail_btn_img.png"
-                    alt=""
-                    class="detail_btn_img"
-                  />
-                </a>
+            <div class="top-section-button top-section-button-pink">
+              <a href="https://gokyoin.com/blog/">もっと見る</a>
+            </div>
             <img src="<?= get_template_directory_uri(); ?>/img/person7.png" alt="" class="blog_person" />
           </div>
         </section>
